@@ -9,9 +9,16 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/base" />
+            <option value="$PROJECT_DIR$/business" />
+            <option value="$PROJECT_DIR$/business/architecturecomponent" />
+            <option value="$PROJECT_DIR$/business/bigfrontend" />
+            <option value="$PROJECT_DIR$/business/opensourceframework" />
+            <option value="$PROJECT_DIR$/business/uicomponent" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
+        <option name="testRunner" value="PLATFORM" />
       </GradleProjectSettings>
     </option>
   </component>
