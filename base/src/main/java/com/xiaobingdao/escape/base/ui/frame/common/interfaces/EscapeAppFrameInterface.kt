@@ -1,11 +1,11 @@
 package com.xiaobingdao.escape.base.uiframe.common.interfaces
 
 import android.content.Context
-import com.hccn.sapp.homescreen.platform.frame.common.model.FrameData
-import com.hccn.sapp.homescreen.platform.frame.common.model.SappFrameDomain
 
 import com.xiaobingdao.escape.base.ui.frame.common.adapters.EscapeAppFrameLayoutBinder
 import com.xiaobingdao.escape.base.ui.frame.common.adapters.EscapeAppFrameLayoutUpdater
+import com.xiaobingdao.escape.base.ui.frame.common.model.EscapeAppFrameDomain
+import com.xiaobingdao.escape.base.ui.frame.common.model.FrameData
 import kotlin.reflect.KClass
 
 /**
@@ -23,7 +23,7 @@ abstract class EscapeAppFrameInterface(val domain: String, yourFrameClass: KClas
         yourFrameClass.let {
             TAG = it.simpleName + " - " + domain
         }
-        this.pageDomain = SappFrameDomain.getFramePageDomain(domain)
+        this.pageDomain = EscapeAppFrameDomain.getFramePageDomain(domain)
     }
 
     abstract fun onBindFrameView(context: Context?, frameData: FrameData): EscapeAppFrameLayoutBinder

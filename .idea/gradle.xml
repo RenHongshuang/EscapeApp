@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/business" />
             <option value="$PROJECT_DIR$/business/architecturecomponent" />
             <option value="$PROJECT_DIR$/business/bigfrontend" />
+            <option value="$PROJECT_DIR$/business/myownexperience" />
             <option value="$PROJECT_DIR$/business/opensourceframework" />
             <option value="$PROJECT_DIR$/business/uicomponent" />
           </set>

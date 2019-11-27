@@ -10,13 +10,13 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.xiaobingdao.escape.base.R
-import com.xiaobingdao.escape.base.uiframe.common.interfaces.EscapeAppMenuListInteface
+import com.xiaobingdao.escape.base.uiframe.common.interfaces.EscapeAppMenuListInterface
 
 /**
  * Created by hs.ren on 2019/11/21.
  */
 
-class HomeCommonFrameAdapter(val context: Context, private val frameMenuList: EscapeAppMenuListInteface, private val caller: EscapeAppMenuListInteface.Caller) : RecyclerView.Adapter<HomeCommonFrameAdapter.HomeCommonFrameViewHolder>(), View.OnClickListener {
+class HomeCommonFrameAdapter(val context: Context, private val frameMenuList: EscapeAppMenuListInterface, private val caller: EscapeAppMenuListInterface.Caller) : RecyclerView.Adapter<HomeCommonFrameAdapter.HomeCommonFrameViewHolder>(), View.OnClickListener {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HomeCommonFrameViewHolder {
         val homeCommonFrameViewHolder = HomeCommonFrameViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.home_screen_common_frame_menu_list_item_layout, parent, false))

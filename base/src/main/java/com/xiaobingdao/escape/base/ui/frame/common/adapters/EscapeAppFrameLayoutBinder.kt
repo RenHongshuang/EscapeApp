@@ -13,7 +13,6 @@ import androidx.annotation.StringRes
  */
 
 class EscapeAppFrameLayoutBinder : EscapeAppFrameLayoutUpdater() {
-
     /**
      * Please set this with string resource ID for Title TextView in Header layout for your Frame.
      * Frame title should support multi-language.
@@ -21,27 +20,25 @@ class EscapeAppFrameLayoutBinder : EscapeAppFrameLayoutUpdater() {
     @StringRes
     var titleTextResId = -1
 
-
     companion object {
-
         private val TAG = EscapeAppFrameLayoutBinder::class.simpleName
+    }
 
-        /**
-         * Please call this method to inflate your own layout(xml) which will be added to Body layout for your Frame.
-         *
-         * @param context  Context to create an instance of LayoutInflater.
-         * @param resource your own layout(xml) resource ID of Body layout.
-         * @return The root View of  which is inflated from
-         */
-        fun inflateBodyLayoutChildView(@NonNull context: Context, @LayoutRes resource: Int): View? {
-            val inflater = LayoutInflater.from(context)
+    /**
+     * Please call this method to inflate your own layout(xml) which will be added to Body layout for your Frame.
+     *
+     * @param context  Context to create an instance of LayoutInflater.
+     * @param resource your own layout(xml) resource ID of Body layout.
+     * @return The root View of  which is inflated from
+     */
+    fun inflateBodyLayoutChildView(@NonNull context: Context, @LayoutRes resource: Int): View? {
+        val inflater = LayoutInflater.from(context)
 
-            val root = FrameLayout(context)
-            val params = FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.WRAP_CONTENT)
-            root.layoutParams = params
+        val root = FrameLayout(context)
+        val params = FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.WRAP_CONTENT)
+        root.layoutParams = params
 
-            return inflater.inflate(resource, root, false)
-        }
+        return inflater.inflate(resource, root, false)
     }
 
 }

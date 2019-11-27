@@ -1,5 +1,6 @@
 include ':app',
         ':base',
+        ':business:myownexperience',
         ':business:architecturecomponent',
         ':business:bigfrontend',
         ':business:uicomponent',

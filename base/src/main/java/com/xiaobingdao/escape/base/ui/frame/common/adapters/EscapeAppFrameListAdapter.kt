@@ -8,8 +8,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.hccn.sapp.homescreen.platform.frame.common.model.FrameData
 import com.xiaobingdao.escape.base.R
+import com.xiaobingdao.escape.base.ui.frame.common.model.FrameData
 //import com.blankj.utilcode.util.LogUtils
 import com.xiaobingdao.escape.base.uiframe.common.interfaces.EscapeAppFrameInterface
 import com.xiaobingdao.escape.base.uiframe.common.interfaces.EscapeAppFrameListInterface
@@ -70,7 +70,7 @@ class EscapeAppFrameListAdapter(val context: Context?, private val frameListInte
         holder.titleTextView?.visibility = View.VISIBLE
         holder.detailButton?.visibility = View.GONE
         holder.bodyLayout?.removeAllViewsInLayout()
-        // set the itemView by SappFrameLayoutBinder
+        // set the itemView by FrameLayoutBinder
         val binder: EscapeAppFrameLayoutBinder = (frame as EscapeAppFrameInterface).onBindFrameView(context, FrameData())
         holder.titleTextView?.setText(binder.titleTextResId)
         holder.detailButton?.visibility = binder.detailButtonVisibility

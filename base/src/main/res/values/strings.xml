@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">base</string>
+    <string name="my_own_experience">我的沉淀</string>
+    <string name="my_own_experience_frame_menu_state_machine">状态机</string>
 </resources>
