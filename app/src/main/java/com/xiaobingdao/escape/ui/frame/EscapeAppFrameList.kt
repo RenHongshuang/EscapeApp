@@ -13,7 +13,7 @@ class EscapeAppFrameList : EscapeAppFrameListInterface() {
 
     override fun getFrameInstanceByDomainClassName(frameDomain: String): EscapeAppFrameInterface? {
         val frameClassInstanceName: String = when (frameDomain) {
-            EscapeAppFrameDomain.Home.MYOWNEXPERIENCE -> " com.xiaobingdao.escape.myownexperience.ui.frame.MyOwnExperienceFrame"
+            EscapeAppFrameDomain.Home.MYOWNEXPERIENCE -> "com.xiaobingdao.escape.myownexperience.ui.frame.MyOwnExperienceFrame"
             else -> ""
         }
         if (frameDomain.isEmpty()) {

@@ -21,7 +21,7 @@ import com.xiaobingdao.escape.base.uiframe.common.interfaces.EscapeAppFrameListI
 class EscapeAppFrameListAdapter(val context: Context?, private val frameListInterface: EscapeAppFrameListInterface?) : RecyclerView.Adapter<FrameViewHolder>(), View.OnClickListener {
 
     companion object {
-        private val TAG = EscapeAppFrameListAdapter::class.simpleName
+        private val TAG = EscapeAppFrameListAdapter::class.java.simpleName
     }
 
     private var mFrameList: MutableList<EscapeAppFrameInterface>? = mutableListOf()
