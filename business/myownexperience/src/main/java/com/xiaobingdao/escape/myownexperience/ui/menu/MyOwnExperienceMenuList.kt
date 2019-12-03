@@ -23,7 +23,7 @@ class MyOwnExperienceMenuList : EscapeAppMenuListInterface() {
         when (caller) {
             Caller.MYOWNEXPERIENCE -> {
                 when (menu) {
-                    STATE_MACHINE -> return R.string.app_name
+                    STATE_MACHINE -> return R.string.state_machine
                 }
             }
         }
