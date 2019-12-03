@@ -5,6 +5,7 @@ import android.os.Message
 import android.util.Log
 
 class EscapeStateMachineDemoManager private constructor() {
+    // TODO clean code for kotlin
     private val mStateHandler: EscapeDemoStateHandler
     private val mIdleState = IdleState()
     private val mRegState = RegState()
