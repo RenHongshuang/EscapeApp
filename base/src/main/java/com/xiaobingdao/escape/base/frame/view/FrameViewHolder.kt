@@ -1,4 +1,4 @@
-package com.xiaobingdao.escape.base.common.adapters
+package com.xiaobingdao.escape.base.frame.view
 
 import android.view.View
 import android.view.ViewGroup

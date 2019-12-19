@@ -4,10 +4,10 @@ import android.content.Context
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.xiaobingdao.escape.base.common.adapters.EscapeAppFrameLayoutBinder
-import com.xiaobingdao.escape.base.common.adapters.EscapeAppFrameLayoutUpdater
-import com.xiaobingdao.escape.base.common.adapters.HomeCommonFrameAdapter
-import com.xiaobingdao.escape.base.common.model.FrameData
+import com.xiaobingdao.escape.base.frame.adapter.EscapeAppFrameLayoutBinder
+import com.xiaobingdao.escape.base.frame.adapter.EscapeAppFrameLayoutUpdater
+import com.xiaobingdao.escape.base.frame.adapter.HomeCommonFrameAdapter
+import com.xiaobingdao.escape.base.frame.model.FrameData
 import com.xiaobingdao.escape.base.uiframe.common.interfaces.EscapeAppFrameInterface
 import com.xiaobingdao.escape.base.uiframe.common.interfaces.EscapeAppMenuListInterface
 import com.xiaobingdao.escape.myownexperience.R

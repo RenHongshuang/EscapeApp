@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.xiaobingdao.escape.R
-import com.xiaobingdao.escape.base.common.adapters.EscapeAppFrameListAdapter
+import com.xiaobingdao.escape.base.frame.adapter.EscapeAppFrameListAdapter
 import com.xiaobingdao.escape.ui.frame.EscapeAppFrameList
 
 class EscapeAppHomeFragment : Fragment() {

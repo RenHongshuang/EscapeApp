@@ -1,6 +1,6 @@
 package com.xiaobingdao.escape.ui.frame
 
-import com.xiaobingdao.escape.base.common.model.EscapeAppFrameDomain
+import com.xiaobingdao.escape.base.frame.model.EscapeAppFrameDomain
 import com.xiaobingdao.escape.base.uiframe.common.interfaces.EscapeAppFrameInterface
 import com.xiaobingdao.escape.base.uiframe.common.interfaces.EscapeAppFrameListInterface
 
