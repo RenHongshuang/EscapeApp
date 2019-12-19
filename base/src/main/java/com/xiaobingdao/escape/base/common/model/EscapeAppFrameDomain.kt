@@ -1,4 +1,4 @@
-package com.xiaobingdao.escape.base.ui.frame.common.model
+package com.xiaobingdao.escape.base.common.model
 
 import android.text.TextUtils
 

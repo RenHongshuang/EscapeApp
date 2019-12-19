@@ -1,4 +1,4 @@
-package com.xiaobingdao.escape.base.ui.statemachine;
+package com.xiaobingdao.escape.base.statemachine;
 
 import android.os.Message;
 

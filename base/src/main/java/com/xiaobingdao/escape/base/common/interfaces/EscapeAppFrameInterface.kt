@@ -2,10 +2,10 @@ package com.xiaobingdao.escape.base.uiframe.common.interfaces
 
 import android.content.Context
 
-import com.xiaobingdao.escape.base.ui.frame.common.adapters.EscapeAppFrameLayoutBinder
-import com.xiaobingdao.escape.base.ui.frame.common.adapters.EscapeAppFrameLayoutUpdater
-import com.xiaobingdao.escape.base.ui.frame.common.model.EscapeAppFrameDomain
-import com.xiaobingdao.escape.base.ui.frame.common.model.FrameData
+import com.xiaobingdao.escape.base.common.adapters.EscapeAppFrameLayoutBinder
+import com.xiaobingdao.escape.base.common.adapters.EscapeAppFrameLayoutUpdater
+import com.xiaobingdao.escape.base.common.model.EscapeAppFrameDomain
+import com.xiaobingdao.escape.base.common.model.FrameData
 import kotlin.reflect.KClass
 
 /**

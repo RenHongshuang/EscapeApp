@@ -1,4 +1,4 @@
-package com.xiaobingdao.escape.base.ui.frame.common.adapters
+package com.xiaobingdao.escape.base.common.adapters
 
 import android.content.Context
 import android.text.TextUtils
@@ -9,7 +9,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.xiaobingdao.escape.base.R
-import com.xiaobingdao.escape.base.ui.frame.common.model.FrameData
+import com.xiaobingdao.escape.base.common.model.FrameData
 //import com.blankj.utilcode.util.LogUtils
 import com.xiaobingdao.escape.base.uiframe.common.interfaces.EscapeAppFrameInterface
 import com.xiaobingdao.escape.base.uiframe.common.interfaces.EscapeAppFrameListInterface
