@@ -1,3 +1,4 @@
 <resources>
     <string name="state_machine">状态机</string>
+    <string name="coroutine">协程</string>
 </resources>

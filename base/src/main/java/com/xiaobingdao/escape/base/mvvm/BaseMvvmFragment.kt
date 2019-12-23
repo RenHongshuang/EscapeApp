@@ -11,16 +11,16 @@ import kotlin.reflect.KClass
  */
 
 abstract class BaseMvvmFragment<VM : BaseViewModel>(clazz: KClass<VM>) : BaseFragment() {
-    protected var viewModel: VM = ViewModelProviders.of(this).get(clazz.java)
+    protected var mViewModel: VM = ViewModelProviders.of(this).get(clazz.java)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        viewModel.lifecycleOwner?.value = activity
-        lifecycle.addObserver(viewModel)
+        mViewModel.lifecycleOwner?.value = activity
+        lifecycle.addObserver(mViewModel)
     }
 
     override fun onDestroy() {
-        lifecycle.removeObserver(viewModel)
+        lifecycle.removeObserver(mViewModel)
         super.onDestroy()
     }
 }

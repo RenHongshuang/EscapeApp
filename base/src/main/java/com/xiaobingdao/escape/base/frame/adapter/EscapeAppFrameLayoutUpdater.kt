@@ -14,6 +14,6 @@ open class EscapeAppFrameLayoutUpdater {
         }
     }
 
-    var detailButtonVisibility = View.INVISIBLE
+    var detailButtonVisibility = View.GONE
     var bodyLayoutChildView: View? = null
 }

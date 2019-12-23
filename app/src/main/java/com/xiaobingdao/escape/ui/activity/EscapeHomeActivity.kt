@@ -15,12 +15,13 @@ class EscapeHomeActivity : BaseActivity(), BottomNavigationView.OnNavigationItem
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_escape_home)
         bottom_navigation.setOnNavigationItemSelectedListener(this)
-
+        bottom_navigation.selectedItemId = R.id.action_main
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.action_main -> showHomeFragment()
+            R.id.action_me -> showHomeFragment()
         }
         return true
     }

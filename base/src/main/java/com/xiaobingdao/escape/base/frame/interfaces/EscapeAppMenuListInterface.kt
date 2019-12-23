@@ -13,6 +13,7 @@ abstract class EscapeAppMenuListInterface {
     companion object {
         // my own experience frame
         val STATE_MACHINE = "state_machine"
+        val COROUTINE = "Coroutine"
     }
 
     enum class Caller {

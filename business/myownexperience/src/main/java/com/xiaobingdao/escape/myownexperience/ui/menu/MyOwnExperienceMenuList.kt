@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import com.xiaobingdao.escape.base.uiframe.common.interfaces.EscapeAppMenuListInterface
 import com.xiaobingdao.escape.myownexperience.R
+import com.xiaobingdao.escape.myownexperience.ui.activity.EscapeAppCorourtineDemoActivity
 import com.xiaobingdao.escape.myownexperience.ui.activity.EscapeAppStateMachineDemoActivity
 
 class MyOwnExperienceMenuList : EscapeAppMenuListInterface() {
@@ -13,6 +14,7 @@ class MyOwnExperienceMenuList : EscapeAppMenuListInterface() {
         when (caller) {
             Caller.MYOWNEXPERIENCE -> {
                 menuList.add(STATE_MACHINE)
+                menuList.add(COROUTINE)
             }
         }
 
@@ -24,6 +26,7 @@ class MyOwnExperienceMenuList : EscapeAppMenuListInterface() {
             Caller.MYOWNEXPERIENCE -> {
                 when (menu) {
                     STATE_MACHINE -> return R.string.state_machine
+                    COROUTINE -> return R.string.coroutine
                 }
             }
         }
@@ -35,7 +38,8 @@ class MyOwnExperienceMenuList : EscapeAppMenuListInterface() {
         when (caller) {
             Caller.MYOWNEXPERIENCE -> {
                 when (menu) {
-                    STATE_MACHINE -> return R.drawable.ic_launcher_foreground
+                    STATE_MACHINE -> return R.drawable.ic_sm
+                    COROUTINE -> return R.drawable.ic_coroutine
                 }
             }
         }
@@ -50,6 +54,9 @@ class MyOwnExperienceMenuList : EscapeAppMenuListInterface() {
                 when (menu) {
                     STATE_MACHINE -> {
                         intent = Intent(context, EscapeAppStateMachineDemoActivity::class.java)
+                    }
+                    COROUTINE -> {
+                        intent = Intent(context, EscapeAppCorourtineDemoActivity::class.java)
                     }
                 }
             }

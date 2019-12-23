@@ -18,7 +18,7 @@ class MyOwnExperienceFrame(frameDomain: String) : EscapeAppFrameInterface(frameD
         val escapeAppFrameLayoutBinder = EscapeAppFrameLayoutBinder()
         context?.let {
             val childView = escapeAppFrameLayoutBinder.inflateBodyLayoutChildView(context, R.layout.frame_home_common_detail_layout)
-            escapeAppFrameLayoutBinder.detailButtonVisibility = View.VISIBLE
+            escapeAppFrameLayoutBinder.detailButtonVisibility = View.GONE
             escapeAppFrameLayoutBinder.titleTextResId = R.string.my_own_experience
             escapeAppFrameLayoutBinder.bodyLayoutChildView = childView
             childView?.let {

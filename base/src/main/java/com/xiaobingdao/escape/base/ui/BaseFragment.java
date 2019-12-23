@@ -10,7 +10,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 /**
- * Created by yumiao on 18/1/5.
+ * Created by hs.ren on 18/1/5.
  */
 public abstract class BaseFragment extends Fragment {
     public void showDialog(Dialog dialog) {

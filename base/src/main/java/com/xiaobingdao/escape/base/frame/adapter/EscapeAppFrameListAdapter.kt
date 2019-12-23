@@ -71,6 +71,7 @@ class EscapeAppFrameListAdapter(val context: Context?, private val frameListInte
         holder.titleTextView?.visibility = View.VISIBLE
         holder.detailButton?.visibility = View.GONE
         holder.bodyLayout?.removeAllViewsInLayout()
+
         // set the itemView by FrameLayoutBinder
         val binder: EscapeAppFrameLayoutBinder = (frame as EscapeAppFrameInterface).onBindFrameView(context, FrameData())
         holder.titleTextView?.setText(binder.titleTextResId)

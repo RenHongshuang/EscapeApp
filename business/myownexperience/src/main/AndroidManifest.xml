@@ -8,5 +8,8 @@
         <activity
             android:name=".ui.activity.EscapeAppStateMachineDemoActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.EscapeAppCorourtineDemoActivity"
+            android:screenOrientation="portrait" />
     </application>
 </manifest>
