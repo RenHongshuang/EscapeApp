@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">uicomponent</string>
+    <string name="vitural_view">vitural View</string>
+    <string name="ui_comopnent">UI 组件</string>
 </resources>

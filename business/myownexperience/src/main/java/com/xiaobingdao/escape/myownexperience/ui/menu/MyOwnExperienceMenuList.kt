@@ -12,7 +12,7 @@ class MyOwnExperienceMenuList : EscapeAppMenuListInterface() {
         val menuList = mutableListOf<String>()
 
         when (caller) {
-            Caller.MYOWNEXPERIENCE -> {
+            Caller.MY_OWN_EXPERIENCE -> {
                 menuList.add(STATE_MACHINE)
                 menuList.add(COROUTINE)
             }
@@ -23,7 +23,7 @@ class MyOwnExperienceMenuList : EscapeAppMenuListInterface() {
 
     override fun getMenuTitleResourceId(menu: String, caller: Caller): Int {
         when (caller) {
-            Caller.MYOWNEXPERIENCE -> {
+            Caller.MY_OWN_EXPERIENCE -> {
                 when (menu) {
                     STATE_MACHINE -> return R.string.state_machine
                     COROUTINE -> return R.string.coroutine
@@ -36,7 +36,7 @@ class MyOwnExperienceMenuList : EscapeAppMenuListInterface() {
 
     override fun getMenuIconResourceId(menu: String, caller: Caller): Int {
         when (caller) {
-            Caller.MYOWNEXPERIENCE -> {
+            Caller.MY_OWN_EXPERIENCE -> {
                 when (menu) {
                     STATE_MACHINE -> return R.drawable.ic_sm
                     COROUTINE -> return R.drawable.ic_coroutine
@@ -50,7 +50,7 @@ class MyOwnExperienceMenuList : EscapeAppMenuListInterface() {
     override fun onMenuPressed(menu: String, context: Context, caller: Caller): Intent {
         var intent: Intent = Intent()
         when (caller) {
-            Caller.MYOWNEXPERIENCE -> {
+            Caller.MY_OWN_EXPERIENCE -> {
                 when (menu) {
                     STATE_MACHINE -> {
                         intent = Intent(context, EscapeAppStateMachineDemoActivity::class.java)

@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">architecturecomponent</string>
+    <string name="architecture_component">架构组件</string>
+    <string name="architecture_mvvm">MVVM</string>
 </resources>

@@ -1,6 +1,7 @@
 package com.xiaobingdao.escape.base.uiframe.common.interfaces
 
 import android.text.TextUtils
+import android.util.Log
 //import com.blankj.utilcode.util.LogUtils
 import java.lang.reflect.InvocationTargetException
 
@@ -28,7 +29,7 @@ abstract class EscapeAppFrameListInterface {
         try {
             aClass = Class.forName(frameInterfaceClassName)
         } catch (e: ClassNotFoundException) {
-            //LogUtils.e(TAG, "newFrameInterfaceClassInstance. $e")
+            Log.e(TAG, "newFrameInterfaceClassInstance. $e")
         }
 
         if (aClass == null) {

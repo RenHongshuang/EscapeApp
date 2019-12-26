@@ -1,2 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.xiaobingda.escape.uicomponent"></manifest>
+    package="com.xiaobingda.escape.uicomponent">
+
+    <application>
+        <activity android:name=".activity.UiComponentActivity"></activity>
+    </application>
+
+</manifest>

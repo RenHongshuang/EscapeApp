@@ -12,12 +12,22 @@ abstract class EscapeAppMenuListInterface {
 
     companion object {
         // my own experience frame
-        val STATE_MACHINE = "state_machine"
+        val STATE_MACHINE = "stateMachine"
         val COROUTINE = "Coroutine"
+        // big frontend
+        val FLUTTER ="flutter"
+        // ARCHITECTURE_COMPONENT
+        val MVVM_ARCHITECTURE ="mvvmArchitecture"
+        // ui component
+        val VIRTURE_VIEW ="virtureView"
+
     }
 
     enum class Caller {
-        MYOWNEXPERIENCE
+        MY_OWN_EXPERIENCE,
+        BIG_FRONTEND,
+        ARCHITECTURE_COMPONENT,
+        UI_COMPONENT
     }
 
     abstract fun getMenuList(caller: Caller): MutableList<String>

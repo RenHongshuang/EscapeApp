@@ -23,7 +23,11 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':base')
+    implementation project(':business:architecturecomponent')
+    implementation project(':business:uicomponent')
     implementation project(':business:myownexperience')
+    implementation project(':business:bigfrontend')
+    implementation project(':business:opensourceframework')
     implementation 'com.android.support:appcompat-v7:29.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     testImplementation 'junit:junit:4.12'

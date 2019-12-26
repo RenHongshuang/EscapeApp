@@ -15,7 +15,10 @@ class EscapeAppFrameDomain {
             val PAGE_DOMAIN = "escape.app.home"
 
             // Parent Domains
-            val MYOWNEXPERIENCE = "$PAGE_DOMAIN.myownexperience"
+            val ARCHITECTURE_COMPONENT =  "$PAGE_DOMAIN.architectureComponent"
+            val MY_OWN_EXPERIENCE = "$PAGE_DOMAIN.myOwnExperience"
+            val BIG_FRONTEND = "$PAGE_DOMAIN.bigFrontend"
+            val UI_COMPONENT ="$PAGE_DOMAIN，uiComponent"
         }
     }
 

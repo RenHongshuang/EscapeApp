@@ -24,7 +24,7 @@ class MyOwnExperienceFrame(frameDomain: String) : EscapeAppFrameInterface(frameD
             childView?.let {
                 val recyclerView = it.findViewById<RecyclerView>(R.id.frame_common_detail_body_rv)
                 recyclerView.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-                recyclerView.adapter = HomeCommonFrameAdapter(context, MyOwnExperienceMenuList(), EscapeAppMenuListInterface.Caller.MYOWNEXPERIENCE)
+                recyclerView.adapter = HomeCommonFrameAdapter(context, MyOwnExperienceMenuList(), EscapeAppMenuListInterface.Caller.MY_OWN_EXPERIENCE)
             }
         }
         return escapeAppFrameLayoutBinder
