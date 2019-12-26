@@ -3,8 +3,9 @@ package com.xiaobingda.escape.uicomponent.activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.xiaobingda.escape.uicomponent.R
+import com.xiaobingdao.escape.base.ui.BaseActivity
 
-class UiComponentActivity : AppCompatActivity() {
+class UiComponentActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

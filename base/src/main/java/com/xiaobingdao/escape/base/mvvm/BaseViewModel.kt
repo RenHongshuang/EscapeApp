@@ -7,11 +7,8 @@ import androidx.lifecycle.*
  * Created by hs.ren on 2019/8/14.
  */
 
-open class BaseViewModel : ViewModel(), LifecycleObserver {
-    var lifecycleOwner: MutableLiveData<FragmentActivity?>? = MutableLiveData()
+abstract class BaseViewModel : ViewModel(), LifecycleObserver {
 
     @OnLifecycleEvent(Lifecycle.Event.ON_DESTROY)
-    fun onDestroy() {
-        lifecycleOwner?.value = null
-    }
+    abstract fun onDestroy()
 }

@@ -1,10 +1,8 @@
-package com.xiaobingdao.escape.ui
+package com.xiaobingdao.escape.ui.activity
 
-import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import com.xiaobingdao.escape.base.ui.BaseActivity
-import com.xiaobingdao.escape.ui.activity.EscapeHomeActivity
 
 class EscapeSplashActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
