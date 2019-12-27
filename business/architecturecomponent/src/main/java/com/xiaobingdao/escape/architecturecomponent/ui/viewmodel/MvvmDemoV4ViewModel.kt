@@ -8,7 +8,7 @@ import com.xiaobingdao.escape.architecturecomponent.ui.MvvmDemoRepository
  * Created by hs.ren on 2019/12/26.
  */
 
-class MvvmDemoV3ViewModel(val mRepository :MvvmDemoRepository) :BaseViewModel() {
+class MvvmDemoV4ViewModel(val mRepository :MvvmDemoRepository) :BaseViewModel() {
 
     override fun onDestroy() {
        Log.d("xiaobingdao","MvvmDemoV3ViewModel ondestory")

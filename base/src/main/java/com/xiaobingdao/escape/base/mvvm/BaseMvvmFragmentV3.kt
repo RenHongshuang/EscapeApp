@@ -1,6 +1,7 @@
 package com.hccn.smt.basesmt.ui.fragments
 
 import android.os.Bundle
+import android.view.View
 import androidx.lifecycle.ViewModelProviders
 import com.hccn.smt.basesmt.viewmodel.BaseViewModel
 import com.xiaobingdao.escape.base.ui.BaseFragment
@@ -19,6 +20,17 @@ abstract class BaseMvvmFragmentV3<VM : BaseViewModel>: BaseFragment() {
         super.onCreate(savedInstanceState)
         lifecycle.addObserver(mViewModel)
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        initView()
+        initData()
+        startObserve()
+        super.onViewCreated(view, savedInstanceState)
+    }
+
+    abstract fun initView()
+    abstract fun initData()
+    abstract fun startObserve()
 
     override fun onDestroy() {
         lifecycle.removeObserver(mViewModel)

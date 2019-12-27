@@ -24,6 +24,5 @@ class EscapeApplication :Application() {
             androidFileProperties()
             modules(listOf(viewModelModule))
         }
-
     }
 }

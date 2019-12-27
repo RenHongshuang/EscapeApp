@@ -11,4 +11,8 @@ abstract class BaseViewModel : ViewModel(), LifecycleObserver {
 
     @OnLifecycleEvent(Lifecycle.Event.ON_DESTROY)
     abstract fun onDestroy()
+
+    override fun onCleared() {
+        super.onCleared()
+    }
 }
