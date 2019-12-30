@@ -15,5 +15,7 @@ class MvvmDemoActivity : AppCompatActivity() {
         //supportFragmentManager.beginTransaction().replace(R.id.container, MvvmDemoV1Fragment()).commit()
         supportFragmentManager.beginTransaction().replace(R.id.container, MvvmDemoV2Fragment()).commit()
         //supportFragmentManager.beginTransaction().replace(R.id.container, MvvmDemoV3Fragment()).commit()
+        //supportFragmentManager.beginTransaction().replace(R.id.container, MvvmDemoV4Fragment()).commit()
+        //supportFragmentManager.beginTransaction().replace(R.id.container, MvvmDemoV5Fragment()).commit()
     }
 }
