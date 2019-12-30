@@ -6,10 +6,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.activity.EscapeAppStateMachineDemoActivity"
+            android:name=".activity.EscapeAppStateMachineDemoActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.activity.EscapeAppCorourtineDemoActivity"
+            android:name=".activity.EscapeAppCorourtineDemoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EscapeAppNetworkDemoActivity"
             android:screenOrientation="portrait" />
     </application>
 </manifest>

@@ -37,6 +37,10 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
     api 'androidx.fragment:fragment-ktx:1.2.0-rc02'
+    api 'com.squareup.retrofit2:retrofit:2.6.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.2'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.0.0'
+    implementation 'com.github.franmontiel:PersistentCookieJar:v1.0.1'
     def koin_version = "2.0.1"
     // Koin AndroidX Scope features
     api "org.koin:koin-androidx-scope:$koin_version"

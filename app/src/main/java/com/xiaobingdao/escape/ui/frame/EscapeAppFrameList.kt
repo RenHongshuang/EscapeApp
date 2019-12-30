@@ -16,8 +16,8 @@ class EscapeAppFrameList : EscapeAppFrameListInterface() {
 
     override fun getFrameInstanceByDomainClassName(frameDomain: String): EscapeAppFrameInterface? {
         val frameClassInstanceName: String = when (frameDomain) {
-            EscapeAppFrameDomain.Home.ARCHITECTURE_COMPONENT -> "com.xiaobingdao.escape.architecturecomponent.ui.frame.ArchitectureComponentFrame"
-            EscapeAppFrameDomain.Home.MY_OWN_EXPERIENCE -> "com.xiaobingdao.escape.myownexperience.ui.frame.MyOwnExperienceFrame"
+            EscapeAppFrameDomain.Home.ARCHITECTURE_COMPONENT -> "com.xiaobingdao.escape.architecturecomponent.frame.ArchitectureComponentFrame"
+            EscapeAppFrameDomain.Home.MY_OWN_EXPERIENCE -> "com.xiaobingdao.escape.myownexperience.frame.MyOwnExperienceFrame"
             EscapeAppFrameDomain.Home.BIG_FRONTEND -> "com.xiaobingdao.escape.bigfrontend.frame.BigFrontendFrame"
             EscapeAppFrameDomain.Home.UI_COMPONENT -> "com.xiaobingda.escape.uicomponent.frame.UiComponentFrame"
             else -> ""

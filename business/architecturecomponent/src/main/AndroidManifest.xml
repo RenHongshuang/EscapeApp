@@ -3,7 +3,7 @@
     package="com.xiaobingdao.escape.architecturecomponent">
 
     <application>
-        <activity android:name="com.xiaobingdao.escape.architecturecomponent.ui.activity.MvvmDemoActivity"></activity>
+        <activity android:name="com.xiaobingdao.escape.architecturecomponent.activity.MvvmDemoActivity"></activity>
     </application>
 
 </manifest>
