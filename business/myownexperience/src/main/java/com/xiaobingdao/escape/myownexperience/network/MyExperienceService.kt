@@ -13,6 +13,6 @@ interface MyExperienceService {
         const val BASE_URL = "https://api.ooopn.com/"
     }
     @GET("image/sogou/api.php")
-    suspend fun getImage(@Query("type") type: String = "json"): ImageDataResponseBody
+    suspend fun getImage(@Query("type") type: String = "json"): BaseResponse<ImageDataResponseBody>
 
 }

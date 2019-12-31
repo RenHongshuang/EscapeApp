@@ -2,6 +2,8 @@ package com.xiaobingdao.escape.myownexperience.activity
 
 import android.os.Bundle
 import android.util.Log
+import com.alibaba.android.arouter.facade.annotation.Route
+import com.xiaobingdao.escape.base.router.EscapeRouterPath
 import com.xiaobingdao.escape.base.ui.BaseActivity
 import com.xiaobingdao.escape.myownexperience.R
 import kotlinx.coroutines.*
@@ -9,7 +11,7 @@ import kotlinx.coroutines.*
 /**
  * Created by hs.ren on 2019/12/23.
  */
-
+@Route(path = EscapeRouterPath.EscapeAppCorourtineDemoActivity)
 @Suppress("NAME_SHADOWING")
 class EscapeAppCorourtineDemoActivity :BaseActivity() {
 

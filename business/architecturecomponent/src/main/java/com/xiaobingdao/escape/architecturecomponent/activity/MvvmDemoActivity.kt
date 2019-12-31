@@ -2,9 +2,12 @@ package com.xiaobingdao.escape.architecturecomponent.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.alibaba.android.arouter.facade.annotation.Route
 import com.xiaobingdao.escape.architecturecomponent.R
 import com.xiaobingdao.escape.architecturecomponent.fragment.MvvmDemoV2Fragment
+import com.xiaobingdao.escape.base.router.EscapeRouterPath
 
+@Route(path = EscapeRouterPath.MvvmDemoActivity)
 class MvvmDemoActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

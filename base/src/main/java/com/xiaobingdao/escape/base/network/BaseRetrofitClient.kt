@@ -3,6 +3,7 @@ package com.xiaobingdao.escape.base.network
 import com.franmontiel.persistentcookiejar.PersistentCookieJar
 import com.franmontiel.persistentcookiejar.cache.SetCookieCache
 import com.franmontiel.persistentcookiejar.persistence.SharedPrefsCookiePersistor
+import com.readystatesoftware.chuck.ChuckInterceptor
 import com.xiaobingdao.escape.base.BuildConfig
 import com.xiaobingdao.escape.base.utils.EscapeUtils
 import com.xiaobingdao.escape.base.utils.NetWorkUtils
@@ -38,6 +39,7 @@ abstract class BaseRetrofitClient {
             }
 
             builder.addInterceptor(logging)
+                    .addInterceptor(ChuckInterceptor(EscapeUtils.applicationContext))
                     .connectTimeout(TIME_OUT.toLong(), TimeUnit.SECONDS)
 
             handleBuilder(builder)

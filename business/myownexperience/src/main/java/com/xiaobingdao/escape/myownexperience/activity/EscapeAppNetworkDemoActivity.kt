@@ -3,6 +3,8 @@ package com.xiaobingdao.escape.myownexperience.activity
 import android.os.Bundle
 import android.util.Log
 import androidx.lifecycle.ViewModelProviders
+import com.alibaba.android.arouter.facade.annotation.Route
+import com.xiaobingdao.escape.base.router.EscapeRouterPath
 import com.xiaobingdao.escape.base.ui.BaseActivity
 import com.xiaobingdao.escape.myownexperience.R
 import com.xiaobingdao.escape.myownexperience.viewmodel.EscapeNetworkActivityViewModel
@@ -13,6 +15,7 @@ import luyao.wanandroid.model.api.MyExperienceRetrofitClient
  * Created by hs.ren on 2019/12/23.
  */
 
+@Route(path = EscapeRouterPath.EscapeAppNetworkDemoActivity)
 @Suppress("NAME_SHADOWING")
 class EscapeAppNetworkDemoActivity :BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,10 +23,7 @@ class EscapeAppNetworkDemoActivity :BaseActivity() {
         setContentView(R.layout.activity_cotourine_demo_layout)
         val mViewModel = ViewModelProviders.of(this).get(EscapeNetworkActivityViewModel::class.java)
         lifecycle.addObserver(mViewModel)
-        mViewModel.getData()
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
+        //mViewModel.getData()
+        mViewModel.getImageData()
     }
 }

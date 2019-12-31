@@ -6,9 +6,11 @@ buildscript {
     repositories {
         google()
         jcenter()
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.2'
+        classpath 'com.android.tools.build:gradle:3.5.3'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
         // Support Libraries
@@ -21,14 +23,13 @@ buildscript {
 
 allprojects {
     repositories {
-
-        maven { url 'https://jitpack.io' }
         maven { url 'https://maven.aliyun.com/repository/public' }
         maven { url 'https://maven.aliyun.com/repository/google' }
         maven { url 'https://maven.aliyun.com/repository/jcenter' }
         maven { url 'https://dl.bintray.com/umsdk/release' }
         maven { url 'https://s3.amazonaws.com/repo.commonsware.com' }
         maven { url 'http://dl.bintray.com/piasy/maven' }
+        maven { url 'https://jitpack.io' }
         google()
         jcenter()
 
