@@ -1,5 +1,6 @@
 package com.xiaobingdao.escape.base.router
 
+import android.content.Context
 import com.alibaba.android.arouter.facade.template.IProvider
 
 /**
@@ -7,4 +8,5 @@ import com.alibaba.android.arouter.facade.template.IProvider
  */
 
 interface ArchitectureComponentModuleService :IProvider  {
+    fun initKoin(context : Context)
 }

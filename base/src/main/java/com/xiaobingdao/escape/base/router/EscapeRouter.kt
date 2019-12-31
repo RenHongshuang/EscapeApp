@@ -8,11 +8,14 @@ import com.alibaba.android.arouter.launcher.ARouter
  */
 
 object EscapeRouter {
+
     /**
      * Get instance of router. A
      * All feature U use, will be starts here.
      */
     private val instance: ARouter = ARouter.getInstance()
+
+    val ArchitectureComponentModuleService = getService(ArchitectureComponentModuleService::class.java)
 
 
     /**
@@ -42,4 +45,6 @@ object EscapeRouter {
     private fun <T> getService(service: Class<T>): T {
         return instance.navigation(service)
     }
+
+
 }

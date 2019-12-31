@@ -1,4 +1,4 @@
-package com.xiaobingdao.escape.ui.di
+package com.xiaobingdao.escape.architecturecomponent.di
 
 import com.xiaobingdao.escape.architecturecomponent.viewmodel.MvvmDemoV2ViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel

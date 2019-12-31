@@ -1,16 +1,12 @@
 package com.xiaobingdao.escape.myownexperience.activity
 
 import android.os.Bundle
-import android.util.Log
 import androidx.lifecycle.ViewModelProviders
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.xiaobingdao.escape.base.router.EscapeRouterPath
 import com.xiaobingdao.escape.base.ui.BaseActivity
 import com.xiaobingdao.escape.myownexperience.R
 import com.xiaobingdao.escape.myownexperience.viewmodel.EscapeNetworkActivityViewModel
-import kotlinx.coroutines.*
-import luyao.wanandroid.model.api.MyExperienceRetrofitClient
-
 /**
  * Created by hs.ren on 2019/12/23.
  */

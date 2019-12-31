@@ -1,8 +1,7 @@
 package com.xiaobingdao.escape.base.model
 
 /**
- * Created by luyao
- * on 2019/10/12 11:08
+ * Created by hs.ren
  */
 sealed class NetworkResult<out T : Any> {
 

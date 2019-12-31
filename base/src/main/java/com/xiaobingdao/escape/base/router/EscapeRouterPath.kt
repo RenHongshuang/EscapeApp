@@ -6,13 +6,13 @@ package com.xiaobingdao.escape.base.router
 
 object EscapeRouterPath {
 
-    const val EscapeService = "/app/EscapeAppService"
+    const val EscapeAppService = "/app/EscapeAppService"
     const val EscapeHomeActivity = "/app/EscapeHomeActivity"
 
-    const val ArchitectureComponentModuleService ="architecturecomponent/ArchitectureComponentModuleService"
+    const val ArchitectureComponentModuleService ="/architecturecomponent/ArchitectureComponentModuleService"
     const val MvvmDemoActivity = "/architecturecomponent/MvvmDemoActivity"
 
-    const val BigFrontendService  = "/bigfrontend/BigFrontendService"
+    const val BigFrontendModuleService  = "/bigfrontend/BigFrontendService"
     const val BigFrontendActivity = "/bigfrontend/BigFrontendActivity"
 
     const val MyExperienceModuleService ="/myownexperience/MyExperienceModuleService"

@@ -39,7 +39,7 @@ kapt {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':base')
-    implementation project(':business:architecturecomponent')
+    runtimeOnly project(':business:architecturecomponent')
     runtimeOnly project(':business:uicomponent')
     runtimeOnly project(':business:myownexperience')
     runtimeOnly project(':business:bigfrontend')
