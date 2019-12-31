@@ -11,7 +11,7 @@ object EscapeRouter {
 
     /**
      * Get instance of router. A
-     * All feature U use, will be starts here.
+     * All feature U use, will be starts here. 另外，这句必须在第一行,否则NPE
      */
     private val instance: ARouter = ARouter.getInstance()
 
