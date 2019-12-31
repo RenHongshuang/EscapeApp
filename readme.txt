@@ -1,13 +1,13 @@
-一个自我练习备忘的项目，
-包含很多技术的demo代码，我用组件化模块化的工程方法和我原创的多条目多模块UI框架组合起来
+## 这是一个摸鱼demo 项目
 
-master branch 是比较原始的代码，通过反射技术完成了module间解耦并实现了组件化
-其他分支通过Arouter 实现更充分的解耦和组件化
+涉及技术：
 
+1.双层reyclerView的模块化UI架构
+2.Arouter 
+3.Kotlin 
+4.MVVM
+5.Jetpack LiveData Databing Navigation Room等组件
+6.依赖注入：Koin
+7.网络框架：协程+Retrofit+okHttp+chunk
 
-1.基于双层reyclerView的模块化UI架构
-2.Arouter 实现多module组件化
-3.Kotlin 语言开发
-4.基于MVVM架构和Jetpack LiveData Databing Navigation Room等组件
-5.fullter项目
 
