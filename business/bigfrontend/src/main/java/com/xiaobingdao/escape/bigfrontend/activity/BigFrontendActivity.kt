@@ -4,13 +4,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.xiaobingdao.escape.base.router.EscapeRouterPath
-import com.xiaobingdao.escape.bigfrontend.R
+import io.flutter.embedding.android.FlutterActivity
 
 @Route(path = EscapeRouterPath.BigFrontendActivity)
 class BigFrontendActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_big_frontend)
+        startActivity(FlutterActivity.createDefaultIntent(this))
     }
 }

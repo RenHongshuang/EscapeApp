@@ -1,7 +1,15 @@
+
 include ':app',
         ':base',
         ':business:myownexperience',
         ':business:architecturecomponent',
         ':business:bigfrontend',
         ':business:uicomponent',
-        ':business:opensourceframework'
+        ':business:opensourceframework',
+        'flutter_escape_module'
+
+setBinding(new Binding([gradle: this, mainModuleName: 'bigfrontend']))
+evaluate(new File(
+        settingsDir,
+        'flutter_escape_module/.android/include_flutter.groovy'
+))

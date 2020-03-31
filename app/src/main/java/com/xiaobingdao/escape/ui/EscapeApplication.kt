@@ -16,6 +16,7 @@ import kotlinx.coroutines.launch
  */
 class EscapeApplication :Application() {
     override fun onCreate() {
+        super.onCreate()
         EscapeUtils.applicationContext = applicationContext
         initArouter()
         initKoin()
